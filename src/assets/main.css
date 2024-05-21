@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  h1,h2,h3{
+    font-weight: 700;
+    line-height: normal;
+  }
+  h1{
+    font-size: 2.986rem;
+  }
+  h2{
+   font-size: 2.488rem;
+  }
+  h3{
+    font-size: 2.074rem;
+  }
+  h4{
+    font-size: 1.728rem;
+  }
+  h5{
+    font-size: 1.44rem;
+  }
+  h6{
+    font-size: 1.2rem;
+  }
+  .lead{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  small{
+  font-size: 0.833rem;
+  }
+
+  @media screen and (max-width:990px) {
+    h1{
+      font-size: 2.027rem;
+    }
+    h2{
+     font-size: 1.802rem;
+    }
+    h3{
+      font-size: 1.602rem;
+    }
+    h4{
+      font-size: 1.424rem;
+    }
+    h5{
+      font-size: 1.266rem;
+    }
+    h6{
+      font-size: 1.125rem;
+    }
+  }
+}
+.btn{
+  @apply  py-2.5 px-8 bg-brand-1 text-brand-4 font-medium rounded-full hover:bg-brand-2 hover:text-brand-1 hover:ring-brand-1 hover:ring-2 duration-300
+}
+
+.form-control{
+  @apply p-2  rounded-lg border
+}
+.form-group{
+  @apply flex flex-col gap-1;
+}
+.form-group label{
+  @apply text-sm italic;
+}
