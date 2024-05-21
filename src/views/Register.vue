@@ -23,7 +23,7 @@ const register = async () => {
   <div class="register grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-68px)] items-center">
     <div class="bg-brand-3 h-full bg-image">
     </div>
-    <div class="flex flex-col items-center justify-center bg-brand-4 h-full">
+    <div class="flex flex-col items-center justify-center bg-brand-4 h-full px-6">
       <div class="max-w-[400px] w-full rounded-lg border bg-white p-6">
         <h4 class="font-semibold text-brand-1 mb-5 text-center">Register</h4>
       <form @submit.prevent="register" class="flex flex-col gap-4 mb-5">

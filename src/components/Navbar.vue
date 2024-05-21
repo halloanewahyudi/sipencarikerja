@@ -12,8 +12,13 @@ const header = ref("")
 const openMenu = () => {
     navMenu.value.classList.toggle('open')
 }
+const closeMenu = ()=> {
+    setTimeout(() => {
+        navMenu.value.classList.remove('open')
+    }, 300);
+}
 onMounted(()=>{
-    
+
 })
 const bgnav = computed(()=>{
   const path =  route.path
@@ -30,7 +35,7 @@ const bgnav = computed(()=>{
     <div :class="bgnav " class="py-2 w-full">
         <div class="container flex items-center justify-between">
             <div class="brand">
-                <Logo @click="router.push('/')" />
+                <Logo class="cursor-pointer" @click="router.push('/')" />
             </div>
             <div class="flex gap-4 lg:flex-row-reverse">
                 <router-link to="/login" class="btn flex gap-2 items-center text-brand-4">
@@ -40,8 +45,8 @@ const bgnav = computed(()=>{
                     <IconMenu />
                 </button>
                 <nav ref="navMenu" class="nav-menu">
-                    <router-link to="/pencari-kerja"> Si pencari kerja</router-link>
-                    <router-link to="/register"> Register </router-link>
+                    <router-link  @click="closeMenu"   to="/pencari-kerja" class="nav-link"> Si pencari kerja</router-link>
+                    <router-link  @click="closeMenu"  to="/register" class="nav-link"> Register </router-link>
                 </nav>
 
             </div>

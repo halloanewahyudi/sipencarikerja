@@ -10,6 +10,5 @@ import Statistik  from '@/components/section/Statistik.vue';
 <template>
   <main class="">
     <Cover />
-    <Statistik />
   </main>
 </template>

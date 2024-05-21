@@ -2,9 +2,9 @@
 import CounterAnimation from '../CounterAnimation.vue';
 </script>
 <template>
-    <div class="min-h-screen bg-brand-4 py-10">
-        <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center h-full">
+    <div class="min-h-[calc(100vh-69px)] bg-brand-4">
+        <div class="container py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ">
                 
                 <div class=" text-center ">
                     <img src="@/assets/img/people.png" alt="" srcset="">
@@ -14,9 +14,9 @@ import CounterAnimation from '../CounterAnimation.vue';
                         Para Pencari Kerja Kumpul disini
                     </h1>
                     <p class="lg:text-xl">
-                      Jika posisi anda menjari pekerjaan, silakan daftarkan diri anda dan para pencari SDM silakan temukan sesuai dengan kriteria anda
+                      Jika posisi anda mencari pekerjaan, silakan daftarkan diri anda dan para pencari SDM silakan temukan sesuai dengan kriteria anda
                     </p>
-                    <router-link to="/" class="btn max-w-max"> Jelajahi</router-link>
+                    <router-link to="/pencari-kerja" class="btn max-w-max"> Jelajahi</router-link>
                 </div>
             </div>
         </div>
